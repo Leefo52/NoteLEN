@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel="stylesheet" href="css/normalize.css" type="text/css">
+		<link rel="stylesheet" href="css/style.css" type="text/css">
+		
+		<script src="js/main.js"></script>
+
+		<title>NoteLEN</title>
+	</head>
+	
+	<body onload="listarNotas()">
+
+		<div class="container">
+			<div class="leftContainer">
+				<div class="logoNotelen">
+					NoteLEN
+				</div>
+				<div class="navBar">
+					<div class="navOption">
+						<a href="">
+							<img src="https://cdn-icons-png.flaticon.com/512/246/246740.png" alt="Início">
+						</a>
+					</div>
+					<div class="navOption">
+						<a href="">
+							<img src="https://cdn-icons-png.flaticon.com/512/246/246736.png" alt="Sobre">
+						</a>
+					</div>
+					<div class="navOption">
+						<a href="">
+							<img src="https://cdn-icons-png.flaticon.com/512/246/246735.png" alt="Configurações">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="rightContainer">
+				<div class="content">
+					<div class="titulo">
+						Anotações
+						<button class="botaoAdicionar" onclick="abrirTela2()">
+							Adicionar
+						</button>
+					</div>
+					<div class="listaNotas" id="listaNotas">
+					</div>
+				</div>
+			</div>
+			<div id="container2" class="container2">
+				<div class="modificarNota">
+					<div class="tituloTela">
+						Adicionar anotação
+						<button class="botaoFechar" onclick="fecharTela2()">Fechar</button>
+					</div>
+					<div class="conteudoTela">
+						<div class="divTituloNota">
+							<label for="inputTituloNota">Título: </label>
+							<input type="text" id="inputTituloNota" maxlength="21">
+						</div>
+						<div class="divConteudoNota">
+							<label for="inputConteudoNota">Conteúdo: </label>
+							<textarea name="" id="inputConteudoNota" cols="28" rows="12"></textarea>
+						</div>
+						<div class="divBotaoSalvar">
+							<button class="botaoSalvar" onclick="adicionarNota()">Salvar</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+	
+</html>

@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
+@font-face {
+	font-family: "NoVirus";
+	src: url("fonts/No Virus.woff");
+}
+
+body {
+    background-color: #222447;
+
+    color: #222447;
+    font-family: 'Roboto', sans-serif;
+
+    height: 100vh;
+
+    min-width: 1280px;
+    min-height: 720px;
+}
+
+.container {
+    display: flex;
+
+    width: 100%;
+    height: 100%;
+}
+
+.leftContainer {
+    background-color: #131329;
+    color: #fff;
+
+    width: 216px;
+    height: 100%;
+}
+
+.logoNotelen {
+    font-family: "NoVirus";
+    font-size: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 108px;
+}
+
+.navBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 60%;
+}
+
+.navOption {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    height: 15%;
+}
+
+.navOption > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    font-size: 16px;
+
+    width: 100%;
+    height: 100%;
+
+    transition-duration: 500ms;
+}
+
+.navOption > a:hover {
+    background-color: #222447;
+    border-radius: 100px 0px 0px 100px;
+}
+
+.navOption > a > img {
+
+    width: 24px;
+    height: 24px;
+}
+
+.rightContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    background-color: #6B6D85;
+
+    padding: 32px;
+    margin: 64px;
+
+    border-radius: 10px;
+
+    box-shadow: 4px 4px 0.2em rgba(0, 0, 0, 0.4);
+
+    width: 80%;
+    height: 80%;
+}
+
+.titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 24px;
+
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+
+    border-bottom: 4px dashed #222447;
+    width: 100%;
+}
+
+.botaoAdicionar {
+    background-color: rgba(0,0,0,0);
+
+    text-align: right;
+    color: #222447;
+    font-size: 16px;
+
+    border: 2px solid #222447;
+    border-radius: 10px;
+
+    padding: 4px 16px;
+
+    transition-duration: 400ms;
+}
+
+.botaoAdicionar:hover {
+    background-color: #479647;
+    color: #fff;
+    border: 2px solid #fff;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.2);
+    transition-duration: 200ms;
+}
+
+.botaoAdicionar:active {
+    position: relative;
+    box-shadow: none;
+    top: 2px;
+    left: 2px;
+}
+
+.listaNotas {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 100%;
+    height: 90%;
+}
+
+.nota {
+    font-family: 'Ubuntu Mono', monospace;
+
+    background-color: rgb(228, 228, 114);
+
+    padding: 16px;
+    margin: 8px;
+
+    width: 168px;
+    height: 168px;
+
+    transition-duration: 200ms;
+}
+
+.nota:hover {
+    position: relative;
+    bottom: 4px;
+    right: 4px;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.tituloNota {
+    font-size: 16px;
+
+    margin-bottom: 8px;
+}
+
+.conteudoNota {
+    font-size: 12px;
+    width: 100%;
+    height: auto;
+    
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.6);
+
+    position: absolute;
+
+    width: 100%;
+    height: 100vh;
+    
+    visibility: hidden;
+}
+
+.modificarNota {
+    background-color: #fff;
+    color: #222447;
+
+    border-radius: 10px;
+
+    padding: 16px;
+
+    width: 600px;
+    height: 400px;
+}
+
+.botaoFechar {
+    background-color: #e35e6b;
+    color: #fff;
+    font-size: 16px;
+
+    border: none;
+    border-radius: 10px;
+
+    padding: 8px 16px;
+}
+
+.tituloTela {
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 24px;
+
+    margin-bottom: 16px;
+}
+
+.conteudoTela {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 100%;
+    height: 268px;
+}
+
+.divTituloNota {
+    margin-bottom: 16px;
+
+    width: 100%;
+}
+
+.divTituloNota > input {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 16px;
+
+    width: 100%;
+}
+
+.divConteudoNota {
+    width: 100%;
+}
+
+.divConteudoNota > textarea {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 16px;
+
+    resize: none;
+    width: 100%;
+}
+
+.divBotaoSalvar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 60px;
+}
+
+.botaoSalvar {
+    background-color: #479647;
+    color: #fff;
+    font-size: 16px;
+
+    border: none;
+    border-radius: 10px;
+
+    padding: 8px 16px;
+
+    width: 40%;
+}
